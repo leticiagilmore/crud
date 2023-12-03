@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRUD</title>
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+
+    <!-- Área de cadastro -->
+    <div class="container">
+      <div class="header">
+        <span>Cadastro de Compositores de música clássica</span>
+        <button onclick="openModal()" id="new">Incluir</button>
+      </div>
+  
+      <div class="divTable">
+        <table>
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>País</th>
+              <th>Ano de Nascimento</th>
+              <th>Ano de Óbito</th>
+              <th>Instrumentação</th>
+              <th>Mídia</th>
+              <th>País de Óbito</th>
+              <th class="acao">Editar</th>
+              <th class="acao">Excluir</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+  
+      <div class="modal-container">
+        <div class="modal">
+          <form>
+            <label for="m-nome">Nome</label>
+            <input id="m-nome" type="text" required />
+  
+            <label for="m-pais">País</label>
+            <input id="m-pais" type="text" required />
+  
+            <label for="m-nascimento">Ano de Nascimento</label>
+            <input id="m-nascimento" type="date" required />
+  
+            <label for="m-obito">Ano de óbito</label>
+            <input id="m-obito" type="date" required />
+  
+            <label for="m-instrumentacao">Instrumentação</label>
+<div>
+  <input id="m-instrumentacao-piano" type="checkbox" name="instrumentacao[]" value="Piano"> Piano
+  <input id="m-instrumentacao-violino" type="checkbox" name="instrumentacao[]" value="Violino"> Violino
+  <input id="m-instrumentacao-oboe" type="checkbox" name="instrumentacao[]" value="Oboé"> Oboé
+  <input id="m-instrumentacao-flauta" type="checkbox" name="instrumentacao[]" value="Flauta"> Flauta
+  <input id="m-instrumentacao-harpa" type="checkbox" name="instrumentacao[]" value="Harpa"> Harpa
+  <input id="m-instrumentacao-saxofone" type="checkbox" name="instrumentacao[]" value="Saxofone"> Saxofone
+  <input id="m-instrumentacao-trompete" type="checkbox" name="instrumentacao[]" value="Trompete"> Trompete
+  <input id="m-instrumentacao-violoncelo" type="checkbox" name="instrumentacao[]" value="Violoncelo"> Violoncelo
+  <!-- Adicione mais opções conforme necessário -->
+</div>
+  
+            <label for="m-midia">Mídia</label>
+            <input id="m-midia" type="file" accept="image/*, video/*">
+  
+            <label for="m-pais-obito">País de Óbito</label>
+            <input id="m-pais-obito" type="text" required />
+  
+            <button id="btnSalvar">Salvar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

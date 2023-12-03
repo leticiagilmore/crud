@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Leticia Francisco">
+    <meta name="viewport" content="width=device-width, 
+        initial-scale=1.0, shrink-to-fit=no">
+    <title>Agenda CRUD</title>
+
+    <!-- Google Fonts - Metal Mania -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Handlee&family=Poppins&display=swap" 
+        rel="stylesheet">
+        
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- Meu CSS -->
+    <link rel="stylesheet" href="css/illegal.css">
+</head>
+
+<body>
+    <header>
+        <!-- Construçã da barra de navegação -->
+        <nav class="navbar navbar-expand-lg fixed-top bg-cor-menu">
+            <section class="container py-2">
+                <a href="" class="navbar-brand">
+                    <img src="images/timetable.png" width="40rem" alt="Sumiu" class="img-fluid">
+                    <span>Agenda CRUD</span>
+                </a>
+
+                <!-- Definição do botão do menu hamburguer -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-items"
+                    aria-current="navbar" aria-controls="navbar-items" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="bi bi-menu-button-wide"></i>
+                </button>
+
+                <!-- Definindo os itens do menu -->
+                <section class="collapse navbar-collapse" id="navbar-items">
+                    <ul class="navbar-nav me-auto mb-0 mb-lg-0">
+                        <li class="nav-item"><a href="" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="/formulario.html" class="nav-link">Operações CRUD</a></li>
+                        <li class="nav-item"><a href="" class="nav-link">Sobre</a></li>
+                        <li class="nav-item"><a href="" class="nav-link">Contato</a></li>
+                    </ul>
+                </section>
+            </section>
+        </nav>
+    </header>
+    <br><br><br><br>
+    <main class="container">
+
+        <!-- Início do slide -->
+        <section class="container" id="container-slider">
+            <section class="carousel slide" id="slider" data-bs-ride="carousel" data-bs-interval="1000">
+                <section class="carousel-indicators">
+
+                    <button type="button" class="active" data-bs-target="#slider" data-bs-slide-to="0"
+                        aria-current="true" aria-label="Slide 1"></button>
+
+                    <button type="button" data-bs-target="#slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+
+                    <button type="button" data-bs-target="#slider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </section>
+
+                <section class="carousel-inner">
+                    <section class="carousel-item active">
+                        <img src="images/slide1.png" alt="" class="d-block w-100">
+                        <section class="carousel-caption">
+                
+                            
+                        </section>
+                    </section>
+
+                    <section class="carousel-item">
+                        <img src="images/slide2.png" alt="" class="d-block w-100">
+                        <section class="carousel-caption">
+                            
+                            
+                        </section>
+                    </section>
+
+                    <section class="carousel-item">
+                        <img src="images/slide3.png" class="d-block w-100">
+                        <section class="carousel-caption">
+
+                           
+                        </section>
+                    </section>
+                </section>
+            </section>
+        </section>
+        <!-- Fim do slider -->
+
+        <!-- Início do banner -->
+        <section class="container" id="container-banner">
+            <section class="row">
+
+                <section class="col-12">
+                    <h4 class="title">Definições CRUD</h4>
+                </section>
+
+                <section class="col-12 col-md-3">
+                    <section class="card">
+
+                        <section class="card-body texto">
+                            <i class="bi bi-plus-circle-fill"></i>
+                            <h4 class="card-title">Create - Inserir</h4>
+                            <p class="card-text">
+                                Esta operação do CRUD realiza a inserção de novos itens em uma base de dados!
+                            </p>
+
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#modalCreate">
+                                Incluir
+                            </button>
+                            <a href="" class="btn btn-outline-primary">Inserir</a>
+                            <a href="" class="btn btn-secondary">Salvar</a>
+
+                        </section>
+                    </section>
+                </section>
+
+                <section class="col-12 col-md-3">
+                    <section class="card">
+                        <section class="card-body texto">
+                            <i class="bi bi-person-vcard-fill"></i>
+                            <h4 class="card-title">Read - Visualizar</h4>
+                            <p class="card-text">
+                                Esta operação do CRUD realiza a visualização dos registros em uma base de dados!
+                            </p>
+
+                            <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                data-bs-target="#modalView">Exibir
+                            </button>
+                            <a href="" class="btn btn-outline-success">Ver</a>
+                            <a href="" class="btn btn-secondary">Visualizar</a>
+
+                        </section>
+                    </section>
+                </section>
+
+                <section class="col-12 col-md-3">
+                    <section class="card">
+
+                        <section class="card-body texto">
+                            <i class="bi bi-recycle"></i>
+                            <h4 class="card-title">Update - Atualizar</h4>
+                            <p class="card-text">
+                                Esta operação do CRUD realiza a atualização dos itens em uma base de dados!
+                            </p>
+                            <a href="" class="btn btn-warning">Alterar</a>
+                            <a href="" class="btn btn-outline-warning">Mudar</a>
+                            <a href="" class="btn btn-secondary">Trocar</a>
+                        </section>
+                    </section>
+                </section>
+
+                <section class="col-12 col-md-3">
+                    <section class="card">
+                        <section class="card-body texto">
+                            <i class="bi bi-trash3-fill"></i>
+                            <h4 class="card-title">Delete - Excluir</h4>
+                            <p class="card-text">
+                                Esta operação do CRUD realiza a exclusão de itens em uma base de dados!
+                            </p>
+                            <a href="" class="btn btn-danger">Excluir</a>
+                            <a href="" class="btn btn-outline-danger">Apagar</a>
+                            <a href="" class="btn btn-secondary">Deletar</a>
+                        </section>
+                    </section>
+                </section>
+            </section>
+        </section>
+
+
+
+
+
+
+
+
+    </main>
+
+
+    <!-- Área de modais -->
+
+    <!-- Modal Create -->
+    <section class="modal fade" id="modalCreate" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <section class="modal-dialog modal-dialog-centered modal-sm">
+            <section class="modal-content">
+                <section class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </section>
+                <section class="modal-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi facilis doloremque eaque
+                    exercitationem nulla nobis repellat! Quaerat modi qui labore!
+                </section>
+                <section class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary">Salvar</button>
+                </section>
+            </section>
+        </section>
+    </section>
+
+    <!-- Modal View -->
+    <section class="modal fade" id="modalView" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <section class="modal-dialog modal-dialog-centered modal-sm">
+            <section class="modal-content">
+                <section class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </section>
+                <section class="modal-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi facilis doloremque eaque
+                    exercitationem nulla nobis repellat! Quaerat modi qui labore!
+                </section>
+                <section class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <button type="button" class="btn btn-primary">Visualizar</button>
+                </section>
+            </section>
+        </section>
+    </section>
+    <footer></footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <!-- Meu JS -->
+    <script src="js/illegal.js"></script>
+</body>
+
+</html>
